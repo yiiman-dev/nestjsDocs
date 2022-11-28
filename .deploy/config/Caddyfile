@@ -1,0 +1,10 @@
+:80 {
+    root * /home/www
+
+    redir / /index.html 308
+
+    encode gzip
+    header -X-Powered-By
+    file_server
+    log
+}
